@@ -14,9 +14,12 @@ services:
     ports:
       - "8080:8080"
     container_name: api-server1
+    environment:
+      SERVER_ID: 1
   web2 :
     image: jonghyunbaik/saltit:latest
     ports:
       - "8081:8080"
     container_name: api-server2
-    
+    environment:
+      SERVER_ID: 2
