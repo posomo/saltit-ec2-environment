@@ -40,5 +40,3 @@ local date_time = os.date('%Y%m%d%H%M%S', curTime)
 local transaction_id = date_time .. sequence
 -- 시퀀스 값을 헤더에 설정
 ngx.req.set_header("X-Transaction-Id", transaction_id)
-
-ngx.log(ngx.ERR, "Transaction ID generated: ", transaction_id, "\n")
