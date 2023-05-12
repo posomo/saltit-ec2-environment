@@ -3,5 +3,3 @@
 
 local sequence = ngx.shared.seq
 sequence:set("sequence", 0)
-
-ngx.log(ngx.ERR, "shared memory variable `sequence` init", "\n");
